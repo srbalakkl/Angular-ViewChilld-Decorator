@@ -1,0 +1,11 @@
+<app-pane id="1" *ngIf="shouldShow"></app-pane>
+<app-pane id="5" *ngIf="!shouldShow"></app-pane>
+
+<button (click)="toggle()">Toggle</button>
+
+<div>Selected: {{selectedPane}}
+</div>
+
+<h1 #headline>Accessing Html element using the ViewChild Decorator.</h1>
+
+<app-child></app-child>
