@@ -39,7 +39,8 @@ export class AppComponent implements AfterViewInit{
     /*By default, if u use it on ngOnInit it'll show undefined error*/
     console.log(`The Element Ref Value == ${this.headlinevalue.nativeElement.innerHTML}`)
     this.getchildVariable.childVariable = 'Changed Variable';
-    console.log(this.getchildVariable.childVariable)
+    console.log('Child Variable ==',this.getchildVariable.childVariable)
+    console.log(`child =${this.getchildVariable.mtd()}`)
 
   }
 
