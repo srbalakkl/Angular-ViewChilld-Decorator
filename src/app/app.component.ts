@@ -25,7 +25,7 @@ export class AppComponent implements OnInit, AfterViewInit{
   }
 
 //   ****** Accessing HTML Element using @ViewChild Decorator ******
-//   @ViewChild('headline') headlinevalue!:ElementRef;
+  @ViewChild('headline') headlinevalue!:ElementRef;
   /* Since we are accessing html element,
     I'm declaring its type as ElementRef. */
 
@@ -48,6 +48,9 @@ export class AppComponent implements OnInit, AfterViewInit{
     console.log(this.getchildVariable.myname)
     console.log(`Getting value by using the  @ViewChildren is ${this.getViewChildren.length}`)
     console.log('get view children =',this.getViewChildren.get(0)?.childVariable)
+    console.log('Child Variable ==',this.getchildVariable.childVariable)
+    console.log(`child =${this.getchildVariable.mtd()}`)
+
   }
 
 }

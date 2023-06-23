@@ -16,4 +16,9 @@ export class ChildComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  mtd(){
+    console.log(`child component's function....`);
+    return 'child component function'
+  }
+
 }
